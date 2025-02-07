@@ -47,8 +47,8 @@ class LShape(Shape):
          [1, 0]],  # Flipped
         [[1, 1, 1],
          [0, 0, 1]],  # Upside down
-        [[0, 0, 1],
-         [0, 0, 1],
+        [[0, 1],
+         [0, 1],
          [1, 1]]  # Rotated
     ]
 
