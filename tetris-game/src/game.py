@@ -5,6 +5,7 @@ from shapes import IShape, JShape, LShape, OShape, SShape, TShape, ZShape
 
 class Game:
     SHAPES = [IShape, JShape, LShape, OShape, SShape, TShape, ZShape]
+    # SHAPES = [LShape]
 
     def __init__(self, width=10, height=20):
         self.width = width
@@ -104,7 +105,6 @@ class Game:
 
         if self.game_over:
             try:
-                print(f"Font path: {self.font_path}")  # 打印字体路径
                 font = pygame.font.SysFont('Arial', 55)  # 使用系统字体
                 text = font.render("Game Over", True, (255, 0, 0))
                 text_rect = text.get_rect(center=(self.width * 15, self.height * 15))  # 控制字体位置
